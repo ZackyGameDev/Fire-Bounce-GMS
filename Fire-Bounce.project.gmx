@@ -5,9 +5,48 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprites name="Invisible Helpers">
+      <sprite>sprites\spr_game</sprite>
+    </sprites>
+    <sprites name="Player">
+      <sprite>sprites\spr_fire</sprite>
+      <sprite>sprites\spr_launch</sprite>
+      <sprite>sprites\spr_arrow</sprite>
+    </sprites>
+    <sprites name="Lava">
+      <sprite>sprites\spr_lava</sprite>
+      <sprite>sprites\spr_lava_bubble</sprite>
+      <sprite>sprites\spr_lava_bubble_pop</sprite>
+      <sprite>sprites\spr_lava_fall</sprite>
+    </sprites>
+    <sprites name="Decorations">
+      <sprite>sprites\spr_light</sprite>
+    </sprites>
+    <sprites name="GUI">
+      <sprite>sprites\spr_cursor</sprite>
+    </sprites>
+    <sprite>sprites\sprite10</sprite>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <scripts name="Object Scripts">
+      <scripts name="Player">
+        <script>scripts\scr_obj_player_create.gml</script>
+        <script>scripts\scr_obj_player_step.gml</script>
+      </scripts>
+    </scripts>
+    <scripts name="Custom Functions">
+      <script>scripts\place_meeting_any.gml</script>
+    </scripts>
+  </scripts>
+  <objects name="objects">
+    <objects name="Player">
+      <object>objects\obj_player</object>
+      <object>objects\obj_aim_arrow</object>
+    </objects>
+  </objects>
   <help>
     <rtf>help.rtf</rtf>
   </help>
