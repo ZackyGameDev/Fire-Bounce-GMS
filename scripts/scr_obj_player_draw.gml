@@ -3,6 +3,8 @@ draw_sprite_ext (sprite_index, image_index, x, y, img_xscale, img_yscale, img_an
 /////////////////////////////////////////////////////////////////////
 // Debug
 
+draw_set_color(c_white)
+
 draw_arrow(x, y, x+hsp*15, y, 3);
 draw_arrow(x, y, x, y+vsp*15, 3);
 draw_circle (x, y, 50, true);

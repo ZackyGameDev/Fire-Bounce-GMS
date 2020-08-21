@@ -38,10 +38,27 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="Object Scripts">
+      <scripts name="Invisible Helpers">
+        <scripts name="obj_game">
+          <script>scripts\scr_obj_game_create.gml</script>
+          <script>scripts\scr_obj_game_draw.gml</script>
+        </scripts>
+        <scripts name="obj_ai">
+          <script>scripts\scr_obj_ai_step.gml</script>
+        </scripts>
+        <scripts name="obj_ai1">
+          <script>scripts\scr_obj_ai1_step.gml</script>
+        </scripts>
+      </scripts>
       <scripts name="Player">
         <script>scripts\scr_obj_player_create.gml</script>
         <script>scripts\scr_obj_player_step.gml</script>
         <script>scripts\scr_obj_player_draw.gml</script>
+      </scripts>
+      <scripts name="GUI">
+        <scripts name="obj_mouse">
+          <script>scripts\scr_obj_mouse_step.gml</script>
+        </scripts>
       </scripts>
     </scripts>
     <scripts name="Custom Functions">
@@ -52,6 +69,7 @@
     <objects name="Invisible Helpers">
       <object>objects\obj_game</object>
       <object>objects\obj_ai</object>
+      <object>objects\obj_ai1</object>
     </objects>
     <objects name="Player">
       <object>objects\obj_player</object>
@@ -62,11 +80,14 @@
       <object>objects\obj_platform2</object>
       <object>objects\obj_platform3</object>
     </objects>
-    <objects name="Decorations">
-      <object>objects\obj_end_transitioner</object>
-    </objects>
     <objects name="Lava">
       <object>objects\obj_lava</object>
+    </objects>
+    <objects name="GUI">
+      <object>objects\obj_mouse</object>
+    </objects>
+    <objects name="Decorations">
+      <object>objects\obj_end_transitioner</object>
     </objects>
   </objects>
   <rooms name="rooms">

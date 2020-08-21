@@ -7,7 +7,7 @@ mouse_button_released = mouse_check_button_released (mb_any);
 ////////////////////////////////////////////////////////////////
 // Movement and Controls
 
-if (mouse_button_pressed and position_meeting (mouse_x, mouse_y, self)) {
+if (mouse_button_pressed and place_meeting (x, y, obj_mouse)) {
 
     instance_create (x, y, obj_aim_arrow);
 
@@ -77,7 +77,7 @@ y += vsp;
 
 ////////////////////////////////////////////////////////////////
 // Game Over
-if place_meeting (x, y, obj_lava) {
+if y > obj_lava.y{
 
     image_alpha = 0;
 
