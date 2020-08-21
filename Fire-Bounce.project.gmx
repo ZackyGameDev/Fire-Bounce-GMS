@@ -8,11 +8,13 @@
   <sprites name="sprites">
     <sprites name="Invisible Helpers">
       <sprite>sprites\spr_game</sprite>
+      <sprite>sprites\spr_ai</sprite>
     </sprites>
     <sprites name="Player">
       <sprite>sprites\spr_fire</sprite>
       <sprite>sprites\spr_launch</sprite>
       <sprite>sprites\spr_arrow</sprite>
+      <sprite>sprites\spr_player_collision_mask</sprite>
     </sprites>
     <sprites name="Lava">
       <sprite>sprites\spr_lava</sprite>
@@ -26,7 +28,11 @@
     <sprites name="GUI">
       <sprite>sprites\spr_cursor</sprite>
     </sprites>
-    <sprite>sprites\sprite10</sprite>
+    <sprites name="Platforms">
+      <sprite>sprites\spr_platform1</sprite>
+      <sprite>sprites\spr_platform2</sprite>
+      <sprite>sprites\spr_platform3</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -35,6 +41,7 @@
       <scripts name="Player">
         <script>scripts\scr_obj_player_create.gml</script>
         <script>scripts\scr_obj_player_step.gml</script>
+        <script>scripts\scr_obj_player_draw.gml</script>
       </scripts>
     </scripts>
     <scripts name="Custom Functions">
@@ -42,11 +49,29 @@
     </scripts>
   </scripts>
   <objects name="objects">
+    <objects name="Invisible Helpers">
+      <object>objects\obj_game</object>
+      <object>objects\obj_ai</object>
+    </objects>
     <objects name="Player">
       <object>objects\obj_player</object>
       <object>objects\obj_aim_arrow</object>
     </objects>
+    <objects name="Platforms">
+      <object>objects\obj_platform1</object>
+      <object>objects\obj_platform2</object>
+      <object>objects\obj_platform3</object>
+    </objects>
+    <objects name="Decorations">
+      <object>objects\obj_end_transitioner</object>
+    </objects>
+    <objects name="Lava">
+      <object>objects\obj_lava</object>
+    </objects>
   </objects>
+  <rooms name="rooms">
+    <room>rooms\rm_game</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
